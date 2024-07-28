@@ -34,7 +34,14 @@ cdk --version
 
 \# !! make sure to cd to your project directly now, after this the setup is local  
 
-\# make a project folder and initalize the cdk project  
+\# make a project folder and initalize the cdk project.  
+\# note - this is only necessary if you are starting from scratch
 mkdir dani-web  
 cd dani-web  
 cdk init app --language typescript  
+
+\# update package.json as needed and install packages with npm  
+npm install
+
+\# create a certificate in AWS Certificate Manager.  
+\# this requires manual approval steps so it is not done with cdk..
